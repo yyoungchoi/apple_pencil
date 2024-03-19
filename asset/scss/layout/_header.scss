@@ -1,0 +1,292 @@
+header {
+  position: relative;
+  z-index: 100;
+  --height: 0;
+  --opacity: 0;
+  .inner {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 22px;
+    @include tabletToMobile {
+      padding: 0;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: var(--height);
+    background: #fff;
+    opacity: var(--opacity);
+    z-index: 6;
+    transition: 0.2s;
+  }
+  &.on {
+    .curtain {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 44px;
+      left: 0;
+      background: rgba(232, 232, 237, 0.4);
+      backdrop-filter: blur(20px);
+      z-index: 5;
+      transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) 80ms, visibility 0.32s step-end 80ms;
+    }
+  }
+  .gnb-nav {
+    width: 100%;
+    @include tabletToMobile {
+      .gnb-nav {
+        display: flex;
+        align-items: center;
+        height: 48px;
+      }
+    }
+    .btn-menu {
+      display: none;
+      @include tabletToMobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        button {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #000;
+          opacity: 0.8;
+          width: 48px;
+          height: 48px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .gnb-list {
+    display: flex;
+    margin: 0 -8px;
+    height: var(--gnb-height);
+    justify-content: space-between;
+    align-items: center;
+    --gnb-height: 44px;
+    @include tabletToMobile {
+      position: relative;
+      top: 0;
+      right: 0;
+      margin: 0;
+      flex: 1;
+      --gnb-height: 48px;
+      padding-right: 48px;
+    }
+    .gnb-item {
+      height: var(--gnb-height);
+      box-sizing: border-box;
+      @include tabletToMobile {
+        &.icon {
+          &:first-of-type {
+            flex-grow: 1;
+          }
+          .gnb-link {
+            padding: 0 16px;
+            height: 48px;
+          }
+        }
+        &.menu {
+          display: none;
+        }
+      }
+      .gnb-link {
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.01px;
+        line-height: 1;
+        z-index: 1;
+        padding: 0 8px;
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &.on {
+        .gnb-container {
+          visibility: visible;
+        }
+      }
+      .gnb-container {
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 100;
+        &.on {
+          .submenu-area {
+            opacity: 1;
+          }
+        }
+        .submenu-area {
+          display: flex;
+          max-width: 1024px;
+          width: 100%;
+          margin: 0 auto;
+          padding: 40px 22px 84px;
+          box-sizing: border-box;
+          opacity: 0;
+          .submenu-wrap {
+            margin-bottom: -4px;
+            max-width: 25%;
+            padding-right: 44px;
+            &.sub-w5 {
+              max-width: 50%;
+              padding-right: 88px;
+              .sub-item {
+                font-size: 24px;
+                line-height: 1.16;
+                font-weight: 600;
+                letter-spacing: 0.1px;
+                &:first-of-type {
+                  margin-top: 6px;
+                }
+              }
+            }
+            .sub-list {
+              h2 {
+                transform: translateY(-4px);
+                transition-property: transform;
+                transition-duration: 0.32s;
+                transition-delay: 0.1s;
+                font-size: 12px;
+                line-height: 1.3;
+                font-weight: 400;
+                color: rgb(110, 110, 115);
+                display: block;
+              }
+              a {
+                color: #333336;
+                text-decoration: none;
+              }
+            }
+            .sub-item {
+              font-size: 12px;
+              line-height: 1.3;
+              font-weight: 600;
+              padding: 7px 0;
+              &:first-of-type {
+                margin-top: 10px;
+              }
+              a {
+                display: inline-block;
+                margin-bottom: -6px;
+                transition: color 0.32s cubic-bezier(0.4, 0, 0.6, 1);
+              }
+            }
+            .sub-item-sm {
+              font-size: 12px;
+              line-height: 1.3;
+              font-weight: 600;
+              padding: 7px 0;
+              &:not(:last-child) {
+                margin-top: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-menu {
+      display: none;
+    }
+  }
+  &.hover {
+    .submenu-area {
+      opacity: 0;
+    }
+    .gnb-container {
+      &.on .submenu-area {
+        opacity: 1;
+        transition: opacity 1s;
+      }
+    }
+  }
+}
+.lnb-nav {
+  position: sticky;
+  min-width: 1024px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 52px;
+  z-index: 99;
+  margin-bottom: -52px;
+  @include tablet {
+    min-width: auto;
+  }
+  @include tabletToMobile {
+    height: 48px;
+  }
+  &.scrolled {
+    .lnb-bg {
+      backdrop-filter: saturate(180%) blur(20px);
+    }
+  }
+  .lnb-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(251, 251, 253, 0.8);
+    transition-property: background, backdrop-filter;
+    transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1), backdrop-filter 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  }
+  .lnb-inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+    z-index: 10;
+    @include tabletToMobile {
+      padding: 0 16px;
+      height: 48px;
+    }
+    .title a {
+      display: block;
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: 0.1px;
+      color: #000;
+      opacity: 0.88;
+      @include tabletToMobile {
+        font-size: 19px;
+      }
+    }
+    .more {
+      position: relative;
+      margin-top: -1px;
+      a {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.33337;
+        letter-spacing: -0.01px;
+        min-width: 25px;
+        padding: 4px 10px;
+        color: #fff;
+        text-align: center;
+        border-radius: 980px;
+        background: #0071e3;
+        border: 1px solid rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}

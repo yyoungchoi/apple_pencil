@@ -1,0 +1,85 @@
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+h2 {
+  font-size: 56px;
+  line-height: 1.08;
+}
+h4 {
+  font-size: 21px;
+  line-height: 1.28;
+}
+a {
+  color: #06c;
+}
+.section {
+  overflow: hidden;
+}
+.sc-inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+  @include tablet {
+    margin: 0 auto;
+    width: 692px;
+  }
+  @include mobile {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%;
+  }
+}
+
+.icon-copy:hover {
+  text-decoration: underline;
+}
+.arrow {
+  position: relative;
+  &:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -0.08em;
+    padding-left: 0.3em;
+  }
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1.1764805882;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  min-width: 28px;
+  padding: 8px 16px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  margin-top: 0.8em;
+}
+.caption-text {
+  font-size: 12px;
+  color: #6e6e73;
+  margin-top: 0.8em;
+  line-height: 1.4;
+}
+sup a {
+  color: inherit;
+  &:hover {
+    color: #06c;
+  }
+}
+.small {
+  display: none;
+}

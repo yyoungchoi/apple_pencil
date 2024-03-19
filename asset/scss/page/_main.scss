@@ -1,0 +1,1601 @@
+.sc-hero {
+  position: relative;
+  padding-bottom: 53px;
+  @include tablet {
+    padding-bottom: 12px;
+  }
+  @include mobile {
+    padding-bottom: 63px;
+  }
+  .headline {
+    margin-top: 139px;
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: 600;
+    @include tablet {
+      margin-top: 142px;
+      font-size: 56px;
+      line-height: 1.07;
+      font-weight: 600;
+    }
+    @include mobile {
+      margin-top: 110px;
+      text-align: center;
+      font-size: 48px;
+      line-height: 1.08;
+    }
+    .small {
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+  .text {
+    margin-top: 22px;
+    font-size: 21px;
+    line-height: 1.38;
+    font-weight: 400;
+    letter-spacing: 0.0055em;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 75%;
+    max-width: 75%;
+    @include tablet {
+      flex-basis: 83.33%;
+      max-width: 83.33%;
+    }
+    @include mobile {
+      order: 3;
+      margin-top: 3px;
+      flex-basis: 100%;
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  .thumb {
+    position: relative;
+    margin-top: 93px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1376px;
+    height: 1169px;
+    @include tablet {
+      margin-top: 90px;
+      width: 867px;
+      height: 739px;
+    }
+    @include tabletToMobile {
+      margin-left: 30px;
+    }
+    @include mobile {
+      order: 2;
+      margin-top: 29px;
+      width: 398px;
+      height: 366px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.sc-generation2 {
+  background: linear-gradient(180deg, #f5f5f7 0%, #fff 30%);
+  padding-bottom: 17px;
+  .pencil-area {
+    .group-left {
+      margin-top: 142px;
+    }
+    .group-right {
+      position: relative;
+      margin-top: 126px;
+      margin-bottom: -94px;
+      flex-basis: 66.67%;
+      max-width: 66.67%;
+      @include tablet {
+        margin-top: 48px;
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+      }
+      @include mobile {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 55px;
+        margin-bottom: -52px;
+      }
+    }
+  }
+  .compatible-area {
+    .compatibility-list {
+      @include mobile {
+        max-height: 182px;
+      }
+    }
+  }
+}
+[class*="sc-generation"] {
+  .pencil-area {
+    display: flex;
+    text-align: left;
+    @include mobile {
+      flex-direction: column;
+    }
+    .group-left {
+      position: relative;
+      margin-bottom: 26px;
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+      @include tablet {
+        margin-top: 68px;
+        margin-bottom: 26px;
+        flex-basis: 41.67%;
+        max-width: 41.67%;
+      }
+      @include mobile {
+        margin-top: 64px;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      .buy {
+        font-size: 21px;
+        @include mobile {
+          font-size: 19px;
+          line-height: 1.2;
+          letter-spacing: 0.012em;
+        }
+        h2 {
+          font-size: 48px;
+          line-height: 1.08;
+          font-weight: 600;
+          @include tablet {
+            font-size: 40px;
+            line-height: 1.1;
+          }
+          @include mobile {
+            font-size: 28px;
+          }
+          .new-item {
+            position: absolute;
+            top: -26px;
+            font-size: 17px;
+            line-height: 1.5;
+            font-weight: 400;
+            display: inline-block;
+            box-sizing: border-box;
+            white-space: nowrap;
+            display: block;
+            color: #bf4800;
+          }
+          .name {
+            display: block;
+            margin: 11px 0 8px;
+            font-size: 21px;
+            @include tablet {
+              margin-top: 6px;
+            }
+            @include mobile {
+              font-size: 19px;
+              margin-top: 10px;
+            }
+          }
+        }
+        .copy {
+          margin-top: 34px;
+          @include tablet {
+            margin-top: 36px;
+          }
+          @include mobile {
+            margin-top: 29px;
+          }
+        }
+        .price {
+          margin-top: 32px;
+          margin-bottom: 4px;
+          @include tablet {
+            margin-top: 38px;
+          }
+          @include mobile {
+            margin-top: 27px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .spec {
+        max-width: 290px;
+        margin-top: 40px;
+        margin-bottom: 0.4em;
+        @include tablet {
+          margin-top: 50px;
+        }
+        @include mobile {
+          margin-top: 34px;
+        }
+        li {
+          font-size: 21px;
+          font-weight: 600;
+          letter-spacing: 0.011em;
+          margin-bottom: 25px;
+          @include mobile {
+            margin-bottom: 23px;
+            font-size: 19px;
+            line-height: 1.2;
+            letter-spacing: 0.012em;
+          }
+        }
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .group-right {
+      flex-basis: 66.67%;
+      max-width: 66.67%;
+      @include tablet {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+      }
+      @include mobile {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+    .pencil {
+      position: relative;
+      left: 50%;
+      margin-left: -207px;
+      background-image: url("../images/apple_pencil2x.png");
+      background-size: 560px 924px;
+      background-repeat: no-repeat;
+      width: 560px;
+      height: 924px;
+      @include tablet {
+        margin-left: -162.5px;
+        background-image: url("../images/apple_pencil2x_medium.png");
+        width: 423px;
+        height: 806px;
+        background-size: 423px 806px;
+      }
+      @include mobile {
+        margin-left: -114px;
+        background-image: url("../images/apple_pencil2x_small.png");
+        width: 288px;
+        height: 642px;
+        background-size: 288px 642px;
+      }
+      .matte {
+        position: absolute;
+        top: 624px;
+        background-image: url("../images/matte2x.png");
+        width: 74px;
+        height: 58px;
+        background-size: 74px 58px;
+        left: 181px;
+        @include tablet {
+          background-image: url("../images/matte_medium_2x.png");
+          width: 68px;
+          height: 56px;
+          background-size: 68px 56px;
+          top: 552px;
+          left: 131px;
+        }
+        @include mobile {
+          top: 408px;
+          left: 106px;
+        }
+      }
+      .wireless {
+        position: absolute;
+        background-image: url("../images/wireless2x.png");
+        width: 90px;
+        height: 84px;
+        background-size: 90px 84px;
+        top: 115px;
+        left: 231px;
+        background-repeat: no-repeat;
+        @include tablet {
+          background-image: url("../images/wireless_medium_2x.png");
+          width: 83px;
+          height: 77px;
+          background-size: 83px 77px;
+          top: 101px;
+          left: 144px;
+        }
+        @include tablet {
+          top: 58px;
+          left: 55px;
+        }
+      }
+    }
+  }
+  .compatible-area {
+    text-align: left;
+    margin-top: 47px;
+    margin-bottom: 84px;
+    @include tablet {
+      margin-bottom: 76px;
+    }
+    @include mobile {
+      margin-top: 67px;
+      margin-bottom: 65px;
+    }
+    h3 {
+      font-size: 21px;
+      padding-bottom: 0.4em;
+      border-bottom: 1px solid #d2d2d7;
+      @include mobile {
+        font-size: 19px;
+        line-height: 1.3;
+        letter-spacing: 0.012em;
+        border: none;
+      }
+    }
+    .compatibility-list {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 6px;
+      grid-row-gap: 10px;
+      @include tablet {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+      }
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-column-gap: 6%;
+        grid-row-gap: 20px;
+      }
+      li {
+        font-size: 14px;
+        @include mobile {
+          width: 47%;
+        }
+      }
+    }
+  }
+}
+
+.sc-generation-usbc {
+  .pencil-area {
+    .group-left {
+      margin-top: 118px;
+      @include tablet {
+        margin-top: 68px;
+      }
+      @include mobile {
+        margin-top: 47px;
+      }
+    }
+    .group-right {
+      position: relative;
+      margin-top: 70px;
+      margin-bottom: -102px;
+      @include tablet {
+        margin-top: 50px;
+        margin-bottom: -75px;
+      }
+      @include mobile {
+        margin-top: 56px;
+        margin-bottom: -52px;
+      }
+      .pencil {
+        position: relative;
+        background-image: url("../images/apple_pencil_usb_c_2x.png");
+        margin-left: -210px;
+        width: 563px;
+        height: 932px;
+        @include tablet {
+          background-image: url("../images/apple_pencil_usb_c_medium_2x.png");
+          width: 423px;
+          height: 806px;
+          left: 50%;
+          margin-left: -162.5px;
+        }
+        @include mobile {
+          background-image: url("../images/apple_pencil_usb_c_small_2x.png");
+          width: 272px;
+          height: 600px;
+          left: 50%;
+          margin-left: -116px;
+        }
+        .matte {
+          background-image: url("../images/snipe_matte_2x.png");
+          top: 512px;
+          left: 27.5px;
+          @include tablet {
+            background-image: url("../images/snipe_matte_medium_2x.png");
+            width: 67px;
+            height: 52px;
+            background-size: 67px 52px;
+            top: 492px;
+            left: 159.5px;
+          }
+          @include mobile {
+            top: 402px;
+            left: 94.5px;
+          }
+        }
+        .wireless {
+          background-image: url("../images/snipe_usb_c_2x.png");
+          background-size: 63px 116px;
+          left: 456px;
+          top: 139px;
+          width: 63px;
+          height: 116px;
+          @include tablet {
+            background-image: url("../images/snipe_usb_c_medium_2x.png");
+            width: 89px;
+            height: 86px;
+            background-size: 89px 86px;
+            top: 90px;
+            left: 154px;
+          }
+          @include mobile {
+            top: 68px;
+            left: 46px;
+          }
+        }
+      }
+    }
+  }
+  .compatible-area {
+    .compatibility-list {
+      @include tablet {
+        li:nth-child(2) {
+          grid-row-start: 2;
+        }
+      }
+      @include mobile {
+        max-height: 222px;
+      }
+    }
+  }
+  .pencil-art {
+    position: relative;
+    width: 1290px;
+    height: 871px;
+    margin-top: -4px;
+    left: 50%;
+    margin-left: -595px;
+    @include tablet {
+      margin-top: -3px;
+      width: 846px;
+      height: 580px;
+      margin-left: -385px;
+    }
+    @include mobile {
+      width: 350px;
+      height: 574px;
+      margin-left: -150px;
+    }
+  }
+}
+
+.sc-generation1 {
+  .pencil-area {
+    .group-left {
+      margin-top: 118px;
+      @include tablet {
+        margin-top: 68px;
+      }
+      @include mobile {
+        margin-top: 47px;
+      }
+    }
+    .group-right {
+      position: relative;
+      margin-bottom: -97px;
+      @include tablet {
+        margin-top: 22px;
+        margin-bottom: -77px;
+      }
+      @include mobile {
+        margin-top: 56px;
+        margin-bottom: -52px;
+      }
+      .pencil {
+        background-image: url("../images/apple_pencil1_2x.png");
+        left: 50%;
+        margin-left: -231px;
+        width: 586px;
+        height: 970px;
+        background-size: 586px 970px;
+        @include tablet {
+          background-image: url("../images/apple_pencil1_medium_2x.png");
+          width: 444px;
+          height: 847px;
+          background-size: 444px 847px;
+          margin-left: -182px;
+        }
+        @include mobile {
+          background-image: url("../images/apple_penci1_small_2x.png");
+          width: 286px;
+          height: 641px;
+          background-size: 286px 641px;
+          margin-left: -113px;
+        }
+        .smooth {
+          position: absolute;
+          background-image: url("../images/snipe_smooth_2x.png");
+          background-repeat: no-repeat;
+          width: 110px;
+          height: 57px;
+          background-size: 110px 57px;
+          top: 582px;
+          left: -2px;
+          @include tablet {
+            background-image: url("../images/snipe_smooth_medium_2x.png");
+            width: 103px;
+            height: 52px;
+            background-size: 103px 52px;
+            top: 588px;
+            left: 112.5px;
+          }
+          @include mobile {
+            top: 396px;
+            left: 94.5px;
+          }
+        }
+        .wireless {
+          background-image: url("../images/snipe_lightning_2x.png");
+          width: 107px;
+          height: 117px;
+          background-size: 107px 117px;
+          top: 120px;
+          left: 470px;
+          @include tablet {
+            background-image: url("../images/snipe_lightning_medium_2x.png");
+            width: 108px;
+            height: 107px;
+            background-size: 108px 107px;
+            top: 80px;
+            left: 156px;
+          }
+          @include mobile {
+            top: 70px;
+            left: 34px;
+          }
+        }
+      }
+    }
+  }
+  .compatible-area {
+    .compatibility-list {
+      @include common {
+        grid-row-gap: 0;
+      }
+      @include laptop {
+        grid-template-rows: repeat(1, auto);
+        li:nth-child(3) {
+          grid-row-start: 2;
+          grid-column-start: 2;
+          margin-top: -87px;
+        }
+      }
+      @include tablet {
+        li:nth-child(2) {
+          grid-row-start: 2;
+          margin-top: 10px;
+        }
+        li:nth-child(3) {
+          grid-row-start: 3;
+          margin-top: 10px;
+        }
+        li:nth-child(n + 4) {
+          grid-row: span 3;
+        }
+      }
+      @include mobile {
+        grid-row-gap: 20px;
+        max-height: 262px;
+      }
+    }
+  }
+  .pencil-art {
+    position: relative;
+    width: 1574px;
+    height: 956px;
+    margin-top: -4px;
+    left: 50%;
+    margin-left: -703px;
+    @include tablet {
+      width: 1029px;
+      height: 653px;
+      margin-left: -492.5px;
+    }
+    @include mobile {
+      width: 441px;
+      height: 665px;
+      margin-left: -159.5px;
+    }
+  }
+}
+
+.sc-hover {
+  padding-bottom: 17px;
+  @include tablet {
+    padding-bottom: 44px;
+  }
+  .hover-area {
+    display: flex;
+    text-align: left;
+    @include mobile {
+      flex-direction: column;
+    }
+    .group-left {
+      flex-basis: 66.67%;
+      max-width: 66.67%;
+      @include tablet {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+      }
+      .art {
+        position: relative;
+        display: inline-block;
+        width: 784px;
+        height: 952px;
+        margin-left: -82px;
+        @include tablet {
+          width: 524px;
+          height: 636px;
+          margin-left: -77px;
+        }
+        @include mobile {
+          width: 338px;
+          height: 411px;
+          left: 50%;
+        }
+      }
+    }
+    .group-right {
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+      @include tablet {
+        flex-basis: 41.67%;
+        max-width: 41.67%;
+      }
+      @include mobile {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      .vid-wrap {
+        position: relative;
+        padding-top: 12px;
+        width: var(--video-width);
+        height: var(--video-height);
+        --video-width: 328px;
+        --video-height: 212px;
+        overflow: hidden;
+        #vid2 {
+          display: none;
+        }
+        @include tablet {
+          --video-width: 288px;
+          --video-height: 212px;
+        }
+        @include mobile {
+          order: 2;
+          --video-width: 100%;
+          --video-height: auto;
+          padding-top: 34px;
+          #vid1 {
+            display: none;
+          }
+          #vid2 {
+            display: block;
+          }
+        }
+        video {
+          height: auto;
+          width: 100%;
+          border-radius: 30px;
+        }
+        .btn-box {
+          position: absolute;
+          top: 24px;
+          right: 14px;
+          z-index: 2;
+          @include mobile {
+            top: 48px;
+          }
+          button {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 32px;
+              height: 32px;
+              border-radius: 50%;
+              background-color: rgba(0, 0, 0, 0);
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              mask: url("../images/play.svg");
+              -webkit-mask: url("../images/play.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-color: rgba(255, 255, 255, 1);
+            }
+            &.pause:after {
+              mask: url("../images/pause_.svg");
+              -webkit-mask: url("../images/pause_.svg");
+            }
+            &.ended:after {
+              mask: url("../images/replay.svg");
+              -webkit-mask: url("../images/replay.svg");
+            }
+          }
+          svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            fill: transparent;
+            stroke: #fff;
+            stroke-width: 6px;
+            stroke-linecap: round;
+            pointer-events: none;
+            transform: rotate(-90deg);
+            .progress-circle {
+              fill: none;
+              stroke-dasharray: 283;
+              stroke-dashoffset: 283;
+            }
+            .progress-background {
+              stroke: #86868b;
+            }
+          }
+        }
+      }
+      h3 {
+        margin-top: 26px;
+        font-size: 32px;
+        line-height: 1.125;
+        font-weight: 600;
+        letter-spacing: 0.004em;
+        @include mobile {
+          margin-top: 21px;
+          font-size: 24px;
+          letter-spacing: 0.009em;
+        }
+      }
+      .hover-copy {
+        margin-top: 0.8em;
+        @include mobile {
+          font-size: 17px;
+          line-height: 1.35;
+          font-weight: 400;
+          letter-spacing: 0em;
+        }
+      }
+      .hover-text {
+        color: #6e6e73;
+        margin-top: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        @include mobile {
+          margin-top: 28px;
+        }
+      }
+    }
+  }
+}
+.sc-features {
+  position: relative;
+  background-color: #f5f5f7;
+  padding-top: 140px;
+  padding-bottom: 150px;
+  @include tablet {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+  @include mobile {
+    padding-top: 62px;
+    padding-bottom: 70px;
+  }
+  .sc-inner {
+    overflow: visible;
+    .f-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 5fr repeat(3, minmax(100px, 1fr));
+      grid-template-rows: 1fr auto repeat(9, 100px);
+      grid-column-gap: 25px;
+      grid-row-gap: 10px;
+      text-align: left;
+      @include common {
+        grid-column-gap: 0px;
+      }
+      @include mobile {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: repeat(20, auto);
+      }
+      h2 {
+        padding-right: 15px;
+        line-height: 1.17;
+        max-width: 100%;
+        @include mobile {
+          padding-right: 0;
+          font-size: 40px;
+          line-height: 1.2;
+          grid-column-start: 1;
+          grid-column-end: 4;
+          text-align: center;
+        }
+      }
+      .prd-pen {
+        margin-top: 0;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-column-gap: 25px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        background: #f5f5f7;
+        @include mobile {
+          position: sticky;
+          top: 48px;
+          grid-column-start: 1;
+          grid-column-end: 4;
+          border-bottom: 1px solid #d2d2d7;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .pen-headline {
+          margin-top: 5px;
+          font-size: 14px;
+          line-height: 1.4;
+          font-weight: 400;
+          @include tablet {
+            font-size: 12px;
+          }
+          @include mobile {
+            margin-top: 30px;
+          }
+        }
+        .pen-img {
+          margin-top: 20px;
+        }
+        .pen-2 .pen-img {
+          background-size: 38px 123px;
+          background-repeat: no-repeat;
+          background-image: url("../images/apple_pencil_2nd_gen.jpg");
+          width: 38px;
+          height: 123px;
+          @include mobile {
+            background-size: 31px 97px;
+            width: 31px;
+            height: 97px;
+          }
+        }
+        .pen-usb .pen-img {
+          background-size: 38px 123px;
+          background-repeat: no-repeat;
+          background-image: url("../images/apple_pencil_usb_c.jpg");
+          width: 38px;
+          height: 123px;
+          @include mobile {
+            background-size: 31px 97px;
+            width: 31px;
+            height: 97px;
+          }
+        }
+        .pen-1 .pen-img {
+          background-size: 38px 123px;
+          background-repeat: no-repeat;
+          background-image: url("../images/apple_pencil_1st_gen.jpg");
+          width: 38px;
+          height: 123px;
+          @include mobile {
+            background-size: 31px 97px;
+            width: 31px;
+            height: 97px;
+          }
+        }
+      }
+      .grid-line {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border-top: 1px solid #d2d2d7;
+        height: 1px;
+        margin-top: -10px;
+        margin-bottom: 15px;
+        @include mobile {
+          display: none;
+        }
+      }
+      .device-comp {
+        display: flex;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        gap: 25px;
+        @include common {
+          grid-column-gap: 0;
+        }
+        @include mobile {
+          grid-column-start: 1;
+          grid-column-end: 4;
+          padding-bottom: 16px;
+          margin-top: -4px;
+          border-bottom: 1px solid #d2d2d7;
+        }
+        .device {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 1;
+          .check {
+            color: #06c;
+            font-size: 21px;
+            line-height: 2.5;
+            font-weight: 600;
+            @include mobile {
+              line-height: 15px;
+            }
+          }
+          .dash {
+            color: #86868b;
+          }
+        }
+      }
+      .feature {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+        @include tablet {
+          margin-right: 22px;
+        }
+        @include mobile {
+          padding-top: 25px;
+          margin-right: 0;
+          grid-column-start: 1;
+          grid-column-end: 4;
+        }
+        .feature-img {
+          min-width: 150px;
+          border-radius: 15px;
+          margin-right: 22px;
+          @include common {
+            margin-top: 12px;
+            margin-bottom: 12px;
+          }
+          @include mobile {
+            display: none;
+          }
+        }
+        .feature-copy .copy {
+          font-size: 17px;
+          line-height: 1.1;
+          font-weight: 600;
+        }
+        .feature-copy .text {
+          font-size: 14px;
+          line-height: 1.5;
+          letter-spacing: 0em;
+        }
+        &.precision figure {
+          background-size: 150px 100px;
+          background-repeat: no-repeat;
+          width: 150px;
+          height: 100px;
+          background-image: url("../images/precision_2x.jpg");
+        }
+      }
+    }
+  }
+}
+
+.sc-comp {
+  padding-top: 140px;
+  padding-bottom: 127px;
+  @include tablet {
+    padding-top: 90px;
+    padding-bottom: 47px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    @include tablet {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .headline-wrap {
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+      @include tablet {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 74px;
+      }
+      .headline {
+        text-align: left;
+        letter-spacing: 0em;
+        margin-bottom: 39px;
+        line-height: 1.17;
+        @include tablet {
+          text-align: center;
+          letter-spacing: -0.05em;
+          margin-bottom: 67px;
+        }
+      }
+      .img-comp {
+        position: relative;
+        display: block;
+        width: 328px;
+        height: 195px;
+        @include tablet {
+          width: 411px;
+          height: 246px;
+          margin: 0 auto;
+        }
+        @include mobile {
+          width: 284px;
+          height: 169px;
+        }
+      }
+    }
+    .comp-list-area {
+      margin-left: 10%;
+      flex-basis: 58.33%;
+      max-width: 58.33%;
+      @include tablet {
+        margin-left: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+      .comp-list-wrap {
+        text-align: left;
+        display: grid;
+        margin-top: 5px;
+        grid-template-columns: 39% 33% 28%;
+        @include tablet {
+          grid-template-columns: 100%;
+        }
+      }
+      .comp-content {
+        @include tablet {
+          margin-bottom: 25px;
+        }
+        h3 {
+          margin-bottom: 18px;
+          @include tablet {
+            margin: bottom 23px;
+          }
+        }
+        ul {
+          @include tablet {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-column-gap: 0;
+            border-bottom: 1px solid #d2d2d7;
+          }
+          @include mobile {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            max-height: 220px;
+            grid-column-gap: 6%;
+          }
+        }
+        li {
+          margin-bottom: 18px;
+          font-size: 14px;
+          line-height: 1.42;
+          font-weight: 400;
+          @include tablet {
+            margin-bottom: 23px;
+          }
+          @include mobile {
+            width: 47%;
+          }
+        }
+        strong {
+          display: block;
+        }
+        .copy {
+          display: block;
+          max-width: 120px;
+        }
+        &.usb-c {
+          ul {
+            @include mobile {
+              max-height: 270px;
+            }
+          }
+          @include tablet {
+            li:nth-child(2) {
+              grid-area: 2/1;
+            }
+          }
+        }
+        &.gen1 {
+          @include tablet {
+            ul {
+              border: none;
+              @include mobile {
+                max-height: 300px;
+              }
+            }
+            li:nth-child(2) {
+              grid-area: 2/1;
+            }
+            li:nth-child(3) {
+              grid-area: 3/1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sc-accessories {
+  background-color: #f5f5f7;
+  .sc-inner {
+    padding: 157px 0 124px;
+    @include tablet {
+      padding: 97px 0 44px;
+    }
+    @include mobile {
+      padding: 66px 0 50px;
+    }
+    h2 {
+      @include tablet {
+        font-size: 48px;
+        line-height: 1.15;
+      }
+      @include mobile {
+        font-size: 40px;
+        // max-width: 100%;
+      }
+    }
+
+    .text {
+      font-size: 21px;
+      margin: 20px auto 0;
+      @include tablet {
+        font-size: 17px;
+        margin-top: 10px;
+      }
+      @include mobile {
+        margin-top: 15px;
+        line-height: 1.5;
+        letter-spacing: 0em;
+      }
+    }
+    .link-box {
+      margin-top: 13px;
+      @include tablet {
+        font-size: 17px;
+        letter-spacing: 0.01em;
+      }
+      @include mobile {
+        line-height: 1.5;
+      }
+    }
+    .accessories-img {
+      position: relative;
+      left: 50%;
+      margin-left: -840px;
+      margin-top: 70px;
+      width: 1680px;
+      height: 557px;
+      @include tablet {
+        margin-left: -568px;
+        margin-top: 61px;
+        width: 1136px;
+        height: 527px;
+      }
+      @include mobile {
+        margin-top: 47px;
+        margin-left: -368px;
+        width: 736px;
+        height: 380px;
+      }
+    }
+  }
+}
+
+.sc-compare {
+  text-align: center;
+  .sc-inner {
+    position: relative;
+    padding: 100px 0;
+    @include tablet {
+      padding: 105px 0 50px;
+    }
+    @include mobile {
+      padding-top: 66px 0 55px;
+    }
+    h2 {
+      margin: 0 auto;
+      @include tablet {
+        font-size: 40px;
+        line-height: 1.2;
+      }
+      @include mobile {
+        max-width: 260px;
+        font-size: 32px;
+      }
+    }
+    .link-box {
+      margin-top: 38px;
+      @include tablet {
+        margin-top: 40px;
+      }
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+      }
+      a {
+        font-size: 21px;
+        @include mobile {
+          font-size: 17px;
+          margin-bottom: 7px;
+        }
+        + {
+          a {
+            margin-left: 1.6em;
+            @include mobile {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .compare-grid {
+      --row-gap: 7px;
+      --column-gap: 34px;
+      margin-top: 72px;
+      max-width: 940px;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-rows: repeat(20, auto);
+      grid-template-columns: repeat(5, 1fr);
+      grid-row-gap: var(--row-gap);
+      grid-column-gap: var(--column-gap);
+      grid-auto-flow: column;
+      @include tablet {
+        margin-top: 22px;
+        --column-gap: 42px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(60, auto);
+        max-width: 500px;
+      }
+      @include mobile {
+        --row-gap: 11px;
+        --column-gap: 10px;
+        max-width: 280px;
+        margin-top: -7px;
+      }
+      .device {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        @include tablet {
+          grid-column: 3 / 5;
+          justify-content: flex-end;
+        }
+        &.ipad-pro {
+          @include tablet {
+            grid-column: 1 / 3;
+          }
+        }
+        &.ipad-10 {
+          @include tablet {
+            grid-column: 1 / 3;
+          }
+        }
+        &.ipad-mini {
+          @include tablet {
+            grid-column: 2 / 4;
+          }
+        }
+        .compare-product-name {
+          order: 3;
+          font-size: 24px;
+          font-weight: 600;
+          letter-spacing: 0.009em;
+          @include tablet {
+            font-size: 21px;
+          }
+          span {
+            display: block;
+            margin-top: 1px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.4;
+            letter-spacing: -0.008em;
+          }
+        }
+        .img-wrap {
+          min-height: 191px;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 0;
+          margin-bottom: 23px;
+          @include tablet {
+            min-height: auto;
+            margin-top: 52px;
+            margin-bottom: 16px;
+          }
+          @include mobile {
+            margin-top: 47px;
+            margin-bottom: 17px;
+          }
+          .ipad-img {
+            &.ipad-pro {
+              width: 167px;
+              height: 191px;
+              background-size: 167px 191px;
+              background-image: url("../images/compare_ipad_pro_2x.png");
+              background-repeat: no-repeat;
+              @include mobile {
+                background-image: url("../images/compare_ipad_pro_small_2x.png");
+                width: 122px;
+                height: 139px;
+                background-size: 122px 139px;
+              }
+            }
+            &.ipad-air {
+              width: 122px;
+              height: 168px;
+              background-size: 122px 168px;
+              background-image: url("../images/compare_ipad_air_2x.png");
+              background-repeat: no-repeat;
+              @include mobile {
+                background-image: url("../images/compare_ipad_air_small_2x.png");
+                width: 89px;
+                height: 123px;
+                background-size: 89px 123px;
+              }
+            }
+            &.ipad-10 {
+              width: 122px;
+              height: 168px;
+              background-size: 122px 168px;
+              background-image: url("../images/compare_ipad_10_9_2x.png");
+              background-repeat: no-repeat;
+              @include mobile {
+                background-image: url("../images/compare_ipad_10_9_small_2x.png");
+                width: 90px;
+                height: 123px;
+                background-size: 90px 123px;
+              }
+            }
+            &.ipad-9 {
+              width: 122px;
+              height: 168px;
+              background-size: 122px 168px;
+              background-image: url("../images/compare_ipad_10_2_2x.png");
+              background-repeat: no-repeat;
+              @include mobile {
+                background-image: url("../images/compare_ipad_10_2_small_2x.png");
+                width: 87px;
+                height: 124px;
+                background-size: 87px 124px;
+              }
+            }
+            &.ipad-mini {
+              width: 93px;
+              height: 134px;
+              background-size: 93px 134px;
+              background-image: url("../images/compare_ipad_mini_2x.png");
+              background-repeat: no-repeat;
+              @include mobile {
+                background-image: url("../images/compare_ipad_mini_small_2x.png");
+                width: 68px;
+                height: 98px;
+                background-size: 68px 98px;
+              }
+            }
+          }
+        }
+        .color-swatches {
+          margin-bottom: 31px;
+          @include tablet {
+            margin-bottom: 30px;
+          }
+          &.ipad-pro {
+            width: 32px;
+            height: 14px;
+            background-size: 32px 14px;
+            background-image: url("../images/ipad_pro_swatches_2x.png");
+            background-repeat: no-repeat;
+          }
+          &.ipad-air {
+            width: 85px;
+            height: 14px;
+            background-size: 85px 14px;
+            background-image: url("../images/ipad_air_swatches_2x.png");
+            background-repeat: no-repeat;
+          }
+          &.ipad-10 {
+            width: 68px;
+            height: 14px;
+            background-size: 68px 14px;
+            background-image: url("../images/ipad_10_9_swatches_2x.png");
+            background-repeat: no-repeat;
+          }
+          &.ipad-9 {
+            width: 32px;
+            height: 14px;
+            background-size: 32px 14px;
+            background-image: url("../images/ipad_10_2_swatches_2x.png");
+            background-repeat: no-repeat;
+          }
+          &.ipad-mini {
+            width: 68px;
+            height: 14px;
+            background-size: 68px 14px;
+            background-image: url("../images/ipad_mini_swatches_2x.png");
+            background-repeat: no-repeat;
+          }
+        }
+        .compare-tag {
+          font-size: 14px;
+          line-height: 1.5;
+          letter-spacing: 0em;
+          margin: 5px auto 0;
+          @include tablet {
+          }
+          @include mobile {
+            line-height: 1.3;
+            font-size: 12px;
+          }
+        }
+        .compare-copy {
+          font-size: 12px;
+          line-height: 1.4;
+          letter-spacing: 0em;
+        }
+        &.feature-cell {
+          .compare-copy {
+            margin-top: 3px;
+          }
+        }
+        &.icon {
+          margin-top: 38px;
+          @include tablet {
+            &:nth-child(20n) {
+              padding-bottom: 48px;
+              border-bottom: 1px solid #d2d2d7;
+              &:last-child {
+                border: none;
+              }
+            }
+          }
+          figure {
+            background-position: 50%;
+            margin-bottom: 10px;
+          }
+        }
+        &.buy {
+          padding-bottom: 30px;
+          margin-top: 16px;
+          border-bottom: 1px solid #d2d2d7;
+          @include tablet {
+            padding-bottom: 49px;
+            margin-top: 10px;
+          }
+          @include mobile {
+            padding-bottom: 35px;
+            margin-top: 13px;
+            margin-bottom: 0;
+          }
+          .button {
+            margin-top: 14px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            line-height: 1.3333733333;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            min-width: 23px;
+            padding: 4px 11px;
+          }
+          .compare-link {
+            display: flex;
+            font-size: 14px;
+          }
+        }
+        &.display {
+          margin-top: 24px;
+        }
+        &.ipad-pro,
+        &.ipad-mini,
+        &.ipad-10,
+        &.ipad-9,
+        &.ipad-air {
+          .chip {
+            width: 39px;
+            height: 39px;
+            background-size: 39px 39px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_chip_m2_2x.png");
+          }
+          .front {
+            width: 32px;
+            height: 42px;
+            background-size: 32px 42px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_cam_front_portrait_2x.png");
+          }
+          .camera {
+            width: 39px;
+            height: 39px;
+            background-size: 39px 39px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_camera_dual_lens_1_2x.png");
+          }
+          .face {
+            width: 39px;
+            height: 39px;
+            background-size: 39px 39px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_face_id_2x.png");
+          }
+          .connector {
+            width: 56px;
+            height: 31px;
+            background-size: 56px 31px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_connector_usb_c_2x.png");
+          }
+          .cellular {
+            width: 48px;
+            height: 34px;
+            background-size: 48px 34px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_cellular_5g_2x.png");
+          }
+          .pencil {
+            width: 17px;
+            height: 45px;
+            background-size: 17px 45px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_pencil_2ndgen_usbc_2x.png");
+          }
+          .keyboard {
+            width: 57px;
+            height: 43px;
+            background-size: 57px 43px;
+            background-repeat: no-repeat;
+            background-image: url("../images/icon_keyboard_magic_2x.png");
+          }
+        }
+        // &.ipad-air {
+        //   .cellular {
+        //     width: 48px;
+        //     height: 34px;
+        //     background-size: 48px 34px;
+        //     background-repeat: no-repeat;
+        //     background-image: url("../images/icon_cellular_5g_2x.png");
+        //   }
+        // }
+      }
+    }
+  }
+}
