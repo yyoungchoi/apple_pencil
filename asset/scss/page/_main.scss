@@ -35,7 +35,7 @@
     font-size: 21px;
     line-height: 1.38;
     font-weight: 400;
-    letter-spacing: 0.0055em;
+    letter-spacing: 0.05em;
     margin-left: auto;
     margin-right: auto;
     flex-basis: 75%;
@@ -778,7 +778,7 @@
           font-size: 17px;
           line-height: 1.35;
           font-weight: 400;
-          letter-spacing: 0em;
+          letter-spacing: 0;
         }
       }
       .hover-text {
@@ -988,7 +988,7 @@
         .feature-copy .text {
           font-size: 14px;
           line-height: 1.5;
-          letter-spacing: 0em;
+          letter-spacing: 0;
         }
         &.precision figure {
           background-size: 150px 100px;
@@ -1026,7 +1026,7 @@
       }
       .headline {
         text-align: left;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         margin-bottom: 39px;
         line-height: 1.17;
         @include tablet {
@@ -1177,7 +1177,7 @@
       @include mobile {
         margin-top: 15px;
         line-height: 1.5;
-        letter-spacing: 0em;
+        letter-spacing: 0;
       }
     }
     .link-box {
@@ -1458,7 +1458,7 @@
         .compare-tag {
           font-size: 14px;
           line-height: 1.5;
-          letter-spacing: 0em;
+          letter-spacing: 0;
           margin: 5px auto 0;
           @include tablet {
           }
@@ -1470,7 +1470,7 @@
         .compare-copy {
           font-size: 12px;
           line-height: 1.4;
-          letter-spacing: 0em;
+          letter-spacing: 0;
         }
         &.feature-cell {
           .compare-copy {
